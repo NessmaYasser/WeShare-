@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorBottomNavigationPrimary">#3B96D2</color>
+    <color name="colorBottomNavigationPrimaryDark">#2880B9</color>
+    <color name="colorBottomNavigationAccent">#FF4081</color>
+    <color name="colorBottomNavigationInactive">#000000</color>
+    <color name="colorBottomNavigationDisable">#3A000000</color>
+    <color name="colorBottomNavigationActiveColored">#FFFFFF</color>
+    <color name="colorBottomNavigationInactiveColored">#50FFFFFF</color>
+    <color name="colorBottomNavigationSelectedBackground">#17000000</color>
+    <color name="colorBottomNavigationNotification">#F63D2B</color>
+</resources>

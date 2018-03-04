@@ -1,0 +1,48 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#3B96D2</item>
+        <item name="colorPrimaryDark">#2880B9</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+
+    <style name="AppTheme2" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#3B96D2</item>
+        <item name="colorPrimaryDark">#2880B9</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+
+
+    <style name="App_EditTextStyle" parent="@android:style/Widget.EditText">
+        <item name="android:background">@drawable/rounded_edit_text</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:layout_height">35dp</item>
+        <item name="android:layout_marginStart">16dp</item>
+        <item name="android:layout_marginEnd">16dp</item>
+        <item name="android:layout_marginBottom">16dp</item>
+        <item name="android:drawablePadding">30dp</item>
+        <item name="android:paddingStart">25dp</item>
+
+        <item name="android:maxLines">1</item>
+        <item name="android:textColorHint">@color/black_overlay</item>
+        <item name="android:textSize">14sp</item>
+
+    </style>
+
+    <color name="black_overlay">#66000000</color>
+</resources>

@@ -1,0 +1,52 @@
+<resources>
+    <string name="app_name">WeShare</string>
+    <string name="home">Home</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="confirmation_message">we sent you an email with a confirmation code to verify your account</string>
+
+    <string-array name="Gender">
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+
+    <string-array name="spinner_items1">
+        <item>Search City:</item>
+        <item>Cairo</item>
+        <item>Alex</item>
+        <item>Ismailia</item>
+        <item>Giza</item>
+
+    </string-array>
+
+    <string-array name="spinner_items2">
+        <item>Search Area:</item>
+        <item>Maadi</item>
+        <item>Helwan</item>
+        <item>Alex</item>
+        <item>Alex</item>
+        <item>Alex</item>
+        <item>Alex</item>
+    </string-array>
+
+    <string-array name="spinner_items11">
+        <item>City:</item>
+        <item>Cairo</item>
+        <item>Alex</item>
+        <item>Ismailia</item>
+        <item>Giza</item>
+    </string-array>
+
+    <string-array name="spinner_items22">
+        <item>Area:</item>
+        <item>Maadi</item>
+        <item>Helwan</item>
+        <item>Alex</item>
+        <item>Alex</item>
+        <item>Alex</item>
+        <item>Alex</item>
+    </string-array>
+
+</resources>

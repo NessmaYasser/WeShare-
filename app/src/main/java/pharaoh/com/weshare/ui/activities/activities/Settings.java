@@ -1,0 +1,102 @@
+package pharaoh.com.weshare.ui.activities.activities;
+
+import android.content.Intent;
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
+import android.support.v7.widget.Toolbar;
+import android.text.TextUtils;
+import android.view.MenuItem;
+import android.view.View;
+import android.widget.CompoundButton;
+import android.widget.Switch;
+import android.widget.TextView;
+
+import java.util.Locale;
+
+import pharaoh.com.weshare.R;
+import pharaoh.com.weshare.RootActivity;
+
+public class Settings extends RootActivity {
+    Switch switch_1;
+    Switch switch_2;
+    Switch switch_3;
+    boolean checked1 = true;
+    boolean checked2 = true;
+    boolean checked3 = true;
+    TextView txt_1;
+    TextView txt_2;
+    TextView txt_3;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_settings);
+
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        if (TextUtils.getLayoutDirectionFromLocale(Locale.getDefault()) == View.LAYOUT_DIRECTION_RTL) {
+            toolbar.setNavigationIcon(R.drawable.ic_chevron_right_black_24dp);
+        } else {
+            toolbar.setNavigationIcon(R.drawable.ic_chevron_left_black_24dp);
+        }
+        setSupportActionBar(toolbar);
+
+    }
+
+
+    public void SwitchView1 (View view){
+        txt_1 = (TextView) findViewById(R.id.text1);
+        if(checked1){
+            txt_1.setText("Enabled");
+            checked1 = false;
+        }
+        else {
+            txt_1.setText("Disabled");
+            checked1 = true;
+        }
+    }
+
+
+    public void SwitchView2 (View view){
+        txt_2 = (TextView) findViewById(R.id.text2);
+        if(checked2){
+            txt_2.setText("Enabled");
+            checked2 = false;
+        }
+        else {
+            txt_2.setText("Disabled");
+            checked2 = true;
+        }
+    }
+
+    public void SwitchView3 (View view){
+        txt_3 = (TextView) findViewById(R.id.text3);
+        if(checked3){
+            txt_3.setText("Enabled");
+            checked3 = false;
+        }
+        else {
+            txt_3.setText("Disabled");
+            checked3 = true;
+        }
+    }
+
+    public void GotoChangeLanguageActivity (View view){
+        Intent i = new Intent(getApplicationContext(), Language.class);
+        startActivity(i);
+    }
+
+    public void GotoChangePassActivity (View view){
+        Intent i = new Intent(getApplicationContext(), ChangePassword.class);
+        startActivity(i);
+    }
+
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case android.R.id.home:
+                onBackPressed();
+                return true;
+        }
+
+        return super.onOptionsItemSelected(item);
+    }
+}

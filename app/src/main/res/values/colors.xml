@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3B96D2</color>
+    <color name="colorPrimaryDark">#2880B9</color>
+    <color name="colorAccent">#3B96D2</color>
+    <color name="darkGray">#cccccc</color>
+    <color name="special_color">#FF4081</color>
+    <color name="white">#ffffff</color>
+    <color name="gray_message_input">#979797</color>
+
+</resources>

@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp">
+
+        <ImageButton
+            android:id="@+id/back"
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_arrow_back_black_24dp"
+            android:background="@android:color/transparent"
+            android:onClick="backToLogin"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/main2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="16dp"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:paddingTop="10dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/ic_logo02" />
+
+        <TextView
+            android:id="@+id/signup_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="20dp"
+            android:text="Sign Up"
+            android:textColor="#ffffff"
+            android:textSize="30sp" />
+
+
+        <EditText
+            style="@style/App_EditTextStyle"
+            android:layout_width="match_parent"
+            android:layout_marginTop="20dp"
+            android:drawableStart="@drawable/ic_user"
+            android:paddingEnd="16dp"
+            android:hint="Mobile Number / Email Address"
+            android:inputType="textEmailAddress" />
+
+        <EditText
+            style="@style/App_EditTextStyle"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="16dp"
+            android:drawableStart="@drawable/ic_fullname"
+            android:hint="Full Name"
+            android:inputType="textPersonName"
+            android:paddingEnd="16dp"
+            android:tag="hidden" />
+
+        <TextView
+            android:id="@+id/date_of_birth"
+            style="@style/App_EditTextStyle"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="0dp"
+            android:drawableEnd="@drawable/ic_drop"
+            android:drawableStart="@drawable/ic_dateofbirth"
+            android:paddingEnd="16dp"
+            android:hint="Date Of Birth"
+            android:clickable="true"
+            android:onClick="setDate"/>
+        <FrameLayout
+            android:layout_width="match_parent"
+            style="@style/App_EditTextStyle"
+            android:layout_marginTop="16dp">
+
+            <pharaoh.com.weshare.ui.activities.activities.PasswordEditText
+                android:id="@+id/password"
+                android:layout_height="35dp"
+                android:background="@drawable/rounded_edit_text"
+                android:layout_width="match_parent"
+                android:layout_marginBottom="0dp"
+                android:drawableStart="@drawable/ic_password"
+                android:hint="Password"
+                android:drawablePadding="30dp"
+                android:inputType="textPassword"
+                android:paddingEnd="16dp"
+                android:textSize="14sp"
+                android:tag="hidden" />
+
+            <ImageView
+                android:id="@+id/password_visability"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_visibility_off_black_24dp"
+                android:layout_gravity="center_vertical|end"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:clickable="true"
+                android:onClick="PasswordVisability"
+                />
+        </FrameLayout>
+
+
+        <TextView
+            android:id="@+id/Gender"
+            style="@style/App_EditTextStyle"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="45dp"
+            android:drawableEnd="@drawable/ic_drop"
+            android:drawableStart="@drawable/ic_gender"
+            android:paddingEnd="16dp"
+            android:hint="Gender"
+            android:clickable="true"
+            android:onClick="pickGender"/>
+
+        <Button
+            android:layout_width="140dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="16dp"
+            android:layout_marginEnd="35dp"
+            android:layout_marginStart="35dp"
+            android:background="@drawable/button_background"
+            android:text="Sign Up"
+            android:textAllCaps="false"
+            android:textColor="#ffffff"
+            android:onClick="Confirmation"
+            android:textSize="18sp"
+            tools:ignore="RtlHardcoded"
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="16dp"
+            android:text="Or"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="40dp"
+            android:layout_marginStart="40dp"
+            android:gravity="start"
+            android:weightSum="3">
+
+
+            <ImageView
+                android:id="@+id/facebook"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:src="@drawable/ic_facebook" />
+
+
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_alignParentEnd="true"
+                android:src="@drawable/ic_google" />
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+    </LinearLayout>
+</ScrollView>
